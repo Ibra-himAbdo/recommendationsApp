@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service LongService {
+    rpc GetWorkerRecommendations (RecommendationRequest) returns (RecommendationResponse);
+    rpc RunModelTraining (Empty) returns (Empty);
+}
+
+message RecommendationRequest {
+    string query = 1;
+}
+
+message RecommendationResponse {
+    repeated WorkerRecommendation recommendations = 1;
+}
+
+message WorkerRecommendation {
+    int64 workerId = 1;
+    string name = 2;
+    float score = 3;
+}
+
+message Empty {}
