@@ -25,7 +25,16 @@ def preprocess_data(ratings_df: pd.DataFrame):
 
     return final_dataset
 
-
+def get_all_genres() -> list[str]:
+    """Get all unique genres from the dataset."""
+    final_df = load_final_data()
+    # Split genres (assuming they're separated by '|')
+    all_genres = set()
+    for genres in final_df['genres'].str.split('|'):
+        if isinstance(genres, list):
+            all_genres.update(genres)
+    return sorted(all_genres)
 
 if __name__ == '__main__':
-    print(load_ratings_data().head())
+    #print(load_ratings_data().head())
+    print(get_all_genres())

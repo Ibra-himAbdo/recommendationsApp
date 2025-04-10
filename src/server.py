@@ -4,7 +4,7 @@ import threading
 import service_pb2 as pb2
 import service_pb2_grpc as pb2_grpc
 from models_training import train_svd, train_knn
-from recommendations import get_top_workers_by_genre
+from recommendations import get_top_workers_by_genre_grpc
 
 class RecommendationService(pb2_grpc.LongServiceServicer):
     def GetWorkerRecommendations(self, request, context):
@@ -12,7 +12,7 @@ class RecommendationService(pb2_grpc.LongServiceServicer):
         genre_name = request.query
         print(f"Received recommendation request for genre: {genre_name}")
 
-        response = get_top_workers_by_genre(genre_name)
+        response = get_top_workers_by_genre_grpc(genre_name)
         return response
 
     def RunModelTraining(self, request, context):
@@ -32,6 +32,7 @@ class RecommendationService(pb2_grpc.LongServiceServicer):
             print("Model training completed!")
         except Exception as e:
             print(f"Error during training: {e}")
+
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))

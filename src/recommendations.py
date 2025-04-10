@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from data_processing import load_final_data
 from scipy.sparse import csr_matrix
 from config import WEIGHT_KNN, WEIGHT_SVD, KNN_MODEL_FILE, SVD_MODEL_FILE, FINAL_DATASET_FILE
+from schemas import WorkerRecommendation, RecommendationResponse
 import service_pb2
 
 @dataclass
@@ -20,11 +21,66 @@ knn = load_model(KNN_MODEL_FILE)
 svd = load_model(SVD_MODEL_FILE)
 final_dataset = load_model(FINAL_DATASET_FILE)
 
-
 worker_df = load_final_data()
 csr_data = csr_matrix(final_dataset.values)
 
-def get_top_workers_by_genre(genre_name, user_id=1, weight_knn=0.4, weight_svd=0.6, top_n=8):
+def get_top_workers_by_genre(genre_name: str, user_id: int = 1, weight_knn: float = WEIGHT_KNN, 
+                           weight_svd: float = WEIGHT_SVD, top_n: int = 8) -> RecommendationResponse:
+    """Get worker recommendations for a specific genre."""
+    # Find workers in the specified genre
+    workers_in_genre = worker_df[worker_df['genres'].str.contains(genre_name, case=False, na=False)]
+
+    if not workers_in_genre.empty:
+        # Ensure workerId is treated as an integer
+        genre_worker_ids = workers_in_genre['workerId'].astype(int).unique()
+
+        # Get KNN similarities
+        distances, indices = knn.kneighbors(csr_data, n_neighbors=11)
+
+        worker_scores = {}
+
+        for worker_id in genre_worker_ids:
+            worker_id = int(worker_id)
+
+            if worker_id in final_dataset['workerId'].values:
+                worker_idx = final_dataset[final_dataset['workerId'] == worker_id].index[0]
+
+                # KNN Similarity (convert distance to similarity)
+                for i, idx in enumerate(indices[worker_idx]):
+                    neighbor_id = int(final_dataset.iloc[idx]['workerId'])
+                    similarity = 1 - distances[worker_idx][i]
+                    worker_scores[neighbor_id] = worker_scores.get(neighbor_id, 0) + (weight_knn * similarity)
+
+        # Get SVD Predicted Ratings
+        for worker_id in list(worker_scores.keys()):
+            worker_id = int(worker_id)
+            predicted_rating = svd.predict(uid=int(user_id), iid=worker_id).est
+            worker_scores[worker_id] += weight_svd * predicted_rating
+
+        # Rank workers by final score
+        ranked_workers = sorted(worker_scores.items(), key=lambda x: -x[1])
+
+        # Prepare the recommendations
+        recommendations = []
+        for worker_id, score in ranked_workers[:top_n]:
+            worker_id = int(worker_id)
+            worker_row = worker_df.loc[worker_df['workerId'] == worker_id, 'names']
+            worker_name = worker_row.values[0] if not worker_row.empty else "Unknown Worker"
+            # Create dictionary instead of dataclass
+            recommendations.append({
+                "workerId": worker_id,
+                "name": worker_name,
+                "score": float(score)  # Ensure score is float
+            })
+            
+        print("not from cache")
+        return RecommendationResponse(recommendations=recommendations)
+    else:
+        return RecommendationResponse(recommendations=[])
+
+
+
+def get_top_workers_by_genre_grpc(genre_name, user_id=1, weight_knn=0.4, weight_svd=0.6, top_n=8):
 
     # Find workers in the specified genre
     workers_in_genre = worker_df[worker_df['genres'].str.contains(genre_name, case=False, na=False)]
@@ -85,8 +141,6 @@ def get_top_workers_by_genre(genre_name, user_id=1, weight_knn=0.4, weight_svd=0
     else:
         print(f"No workers found for the genre '{genre_name}'.")
         return service_pb2.RecommendationResponse(recommendations=[])
-
-
 
 def get_top_workers_by_genre2(genre_name:str, user_id=1, top_n=8):
 

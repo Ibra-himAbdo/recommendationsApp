@@ -1,0 +1,621 @@
+{
+  "last_updated": "2025-04-10T18:44:57.941857",
+  "recommendations": {
+    "Cleaning": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 2502.5595003266
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 2502.547499071552
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 2502.537901215286
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 2502.522893899103
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 2502.5209251968126
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 2502.5120483714004
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 2502.501937571574
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 2502.4919467364125
+        }
+      ]
+    },
+    "Deep Cleaning": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 733.359500326281
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 733.3474990712334
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 733.3379012149672
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 733.3228938987842
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 733.3209251964938
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 733.3120483710817
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 733.3019375712554
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 733.2919467360938
+        }
+      ]
+    },
+    "Electrical systems": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 1503.3595003263729
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 1503.347499071325
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 1503.337901215059
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 1503.322893898876
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 1503.3209251965854
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 1503.3120483711734
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 1503.3019375713473
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 1503.2919467361855
+        }
+      ]
+    },
+    "Energy efficiency": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 135.3595003263063
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 135.34749907125857
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 135.33790121499248
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 135.3228938988094
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 135.320925196519
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 135.31204837110687
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 135.30193757128063
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 135.29194673611903
+        }
+      ]
+    },
+    "Exterior maintenances": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 1262.5595003263181
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 1262.5474990712703
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 1262.5379012150042
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 1262.5228938988212
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 1262.5209251965307
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 1262.5120483711187
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 1262.5019375712925
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 1262.4919467361308
+        }
+      ]
+    },
+    "General": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 15.759500326305478
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 15.747499071257765
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 15.737901214991675
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 15.722893898808618
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 15.720925196518182
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 15.71204837110607
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 15.70193757127982
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 15.691946736118226
+        }
+      ]
+    },
+    "HVAC": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 860.9595003262738
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 860.9474990712262
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 860.93790121496
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 860.9228938987769
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 860.9209251964866
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 860.9120483710744
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 860.9019375712481
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 860.8919467360865
+        }
+      ]
+    },
+    "Pest control": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 65.35950032630531
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 65.3474990712576
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 65.3379012149915
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 65.32289389880845
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 65.32092519651802
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 65.3120483711059
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 65.30193757127965
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 65.29194673611806
+        }
+      ]
+    },
+    "Plumbing": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 390.9595003263005
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 390.94749907125276
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 390.93790121498665
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 390.92289389880364
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 390.92092519651317
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 390.9120483711011
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 390.9019375712748
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 390.89194673611325
+        }
+      ]
+    },
+    "Safety and security": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 177.3595003263069
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 177.34749907125916
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 177.33790121499308
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 177.32289389881
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 177.3209251965196
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 177.31204837110747
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 177.30193757128123
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 177.29194673611963
+        }
+      ]
+    },
+    "Seasonal maintenance": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 659.3595003262852
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 659.3474990712376
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 659.3379012149715
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 659.3228938987884
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 659.320925196498
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 659.3120483710859
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 659.3019375712596
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 659.291946736098
+        }
+      ]
+    },
+    "War": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 154.55950032630656
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 154.54749907125884
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 154.53790121499276
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 154.52289389880968
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 154.52092519651927
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 154.51204837110714
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 154.5019375712809
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 154.4919467361193
+        }
+      ]
+    },
+    "Western": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 68.95950032630535
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 68.94749907125762
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 68.93790121499154
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 68.92289389880848
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 68.92092519651804
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 68.91204837110593
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 68.90193757127969
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 68.89194673611809
+        }
+      ]
+    },
+    "war": {
+      "recommendations": [
+        {
+          "workerId": 933944895926,
+          "name": "Julie Holmes",
+          "score": 154.55950032630656
+        },
+        {
+          "workerId": 933944900872,
+          "name": "Sarah Harrison",
+          "score": 154.54749907125884
+        },
+        {
+          "workerId": 933944895064,
+          "name": "Samantha Mack",
+          "score": 154.53790121499276
+        },
+        {
+          "workerId": 933944900677,
+          "name": "Patricia Johnson",
+          "score": 154.52289389880968
+        },
+        {
+          "workerId": 933944897828,
+          "name": "Jennifer Cain",
+          "score": 154.52092519651927
+        },
+        {
+          "workerId": 933944896986,
+          "name": "John Martinez",
+          "score": 154.51204837110714
+        },
+        {
+          "workerId": 933944901182,
+          "name": "Joseph Hicks",
+          "score": 154.5019375712809
+        },
+        {
+          "workerId": 933944893049,
+          "name": "Corey Henderson",
+          "score": 154.4919467361193
+        }
+      ]
+    }
+  }
+}
